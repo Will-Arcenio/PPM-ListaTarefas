@@ -46,6 +46,7 @@ input {
     color: rgb(197, 119, 30);
 }
 
+
 /* LISTA TAREFAS */
 ul#listaTarefa {
     list-style: decimal;
@@ -62,4 +63,8 @@ ul#listaTarefa li button#btn_items {
     border-radius: 5px;
     font-weight: 400;
     margin-left: 10px;
+}
+
+button#btn_items:hover {
+    color: red;
 }

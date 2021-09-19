@@ -1,5 +1,5 @@
 function excluirTarefa(classe) {
-    // alert(classe);
+    document.querySelector('.' + classe);
 }
 
 var addTarefa = document.querySelector('#tarefa').addEventListener('keypress', function(event){
@@ -16,7 +16,7 @@ var addTarefa = document.querySelector('#tarefa').addEventListener('keypress', f
             let li = document.createElement('li');
             li.setAttribute('class', 'item' + qtdLi);
             li.appendChild(textNode);
-            li.innerHTML += '<button onclick="' + excluirTarefa() + '" class="' + li.className + ' icon-cross" id="btn_items" title="Excluir Tarefa"></button>';
+            li.innerHTML += '<button onclick="excluirTarefa(' + li.className + ')" class="' + li.className + ' icon-cross" id="btn_items" title="Excluir Tarefa"></button>';
             listaTarefa.appendChild(li);
             console.log('Caí em cima');
         } else {
