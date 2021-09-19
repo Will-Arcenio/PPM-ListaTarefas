@@ -45,3 +45,21 @@ input {
 .imc {
     color: rgb(197, 119, 30);
 }
+
+/* LISTA TAREFAS */
+ul#listaTarefa {
+    list-style: decimal;
+}
+
+ul#listaTarefa li {
+    padding-bottom: 15px;
+}
+
+ul#listaTarefa li button#btn_items {
+    background-color: #737070;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: 400;
+    margin-left: 10px;
+}
