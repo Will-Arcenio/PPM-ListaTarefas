@@ -1,6 +1,11 @@
 function excluirTarefa(classe) {
     console.log(`Teste: ${classe}`);
     document.querySelector('li.' + classe).remove();
+
+    // 
+    if (!document.querySelector('#listaTarefa li')) {
+        document.getElementById('listaTarefa').remove();
+    }
     
     // Seta foco no campo de TAREFA
     setFocus();
